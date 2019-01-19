@@ -128,6 +128,7 @@ state_dict['embedding.weight'] = state_dict['encoder.weight']
 state_dict.pop('encoder.weight')
 
 model.load_state_dict(state_dict)
+model.eval()
 
 def predict_sentiment(sentence, seq_length=200):
     tokenized = [vocab_to_int[word] for word in sentence.split()]
