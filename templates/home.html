@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Sentiment Test</h2>
+
+<form action="." method="POST">
+    {% csrf_token %}
+  Input:<br>
+  <input type="text" name="text" placeholder="Movie is great" size="50"> 
+  <br>
+  
+  <input type="submit" value="Submit">
+</form> 
+<br>
+<br>
+<p>{{sentiment}}</p>
+
+</body>
+</html>
