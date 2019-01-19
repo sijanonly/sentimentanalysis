@@ -1,10 +1,12 @@
-# Django project with LSTM model for sentiment analysis
+### Solution for the vdl exercise 4 on RNN and sentiment analysis for Very Deep learning course TUK_Very Deep Learning_WS 2018/19
 
-### For saving model after training
+#### Django project with LSTM model for sentiment analysis
+
+#### For saving model after training
 
 `torch.save({'model_state_dict': model.state_dict()}, FILE_PATH)`
 
-### For loading model for inference
+#### For loading model for inference
 ```
 device = torch.device('cpu')
 checkpoint = torch.load(FILE_PATH, map_location=device)
@@ -12,7 +14,7 @@ state_dict =checkpoint['model_state_dict']
 model.load_state_dict(state_dict)
 ```
 
-## Setup
+#### Setup
 
 * download model file : [file1](https://www.dropbox.com/s/c39m71h3ai0exrn/lstmmodelgpu2.tar?dl=1)
 
