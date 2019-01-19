@@ -1,7 +1,5 @@
 ### Solution for the vdl exercise 4 on RNN and sentiment analysis for Very Deep learning course TUK_Very Deep Learning_WS 2018/19
 
-#### Django project with LSTM model for sentiment analysis
-
 #### For saving model after training
 
 `torch.save({'model_state_dict': model.state_dict()}, FILE_PATH)`
