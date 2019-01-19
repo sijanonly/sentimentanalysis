@@ -2,12 +2,12 @@
 
 ### For saving model after training
 
-`torch.save({'model_state_dict': model.state_dict()}, FILE_LOCATION)`
+`torch.save({'model_state_dict': model.state_dict()}, FILE_PATH)`
 
 ### For loading model for inference
 ```
 device = torch.device('cpu')
-checkpoint = torch.load('lstmmodelgpu2.tar', map_location=device)
+checkpoint = torch.load(FILE_PATH, map_location=device)
 state_dict =checkpoint['model_state_dict']
 model.load_state_dict(state_dict)
 ```
